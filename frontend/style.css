@@ -1,0 +1,230 @@
+/* General Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial',sans-serif;
+}
+body{
+    color: #fff;
+    background-color: #121212;
+    display: flex;
+    height: 100vh;
+}
+/* sidebar styles */
+.sidebar{
+    background-color: #000;
+    width: 240px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+/* Content Styles */
+.content{
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+/* Player Styles */
+.player{
+    background-color: #181818;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+}
+/* Header Styles */
+header{
+    background-color: #181818;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Section Styles */
+section{
+    margin:20px;
+
+}
+
+/* Card Styles */
+ .card{
+    display: inline-block;
+    background-color: #282828;
+    margin-right:20px ;
+    border-radius: 4px;
+    width: 200px;
+    background-size:cover ;
+    background-position: center;
+    position: relative;
+ }
+
+ .card.title{
+    position: absolute;
+    bottom:10px;
+    left:10px;
+    color: white;
+    font-size: 16px;
+ }
+
+ /* Scrollbar Styles */
+  ::-webkit-scrollbar{
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track{
+    background: #0e0e0e;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 3px solid #0e0e0e;
+  }
+ 
+   /* Navigation sidebar styles */
+   .sidebar{
+    color: #b3b3b3; 
+    padding: 25px 10px;
+    font-size: 14px;
+  } 
+
+  .sidebar a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 5px 15px;
+    margin:10px 0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .sidebar a:hover,
+  .sidebar a.active{
+    background-color: #282828;
+  }
+
+  /* Serach bar styles */
+  .search-bar{
+    background-color: #fff;
+    border-radius: 4px;
+    padding:10px 15px;
+    margin:20px 0;
+  }
+
+  /* Main Content Tiles */
+  .tile{
+    display: inline-flex;
+    flex-direction: column;
+    width: 150px;
+    margin:0 10px 20px;
+    text-align: center;
+    color: #fff;
+
+
+}
+
+.tile img{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.tile.title{
+    font-size: 16px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.tile.subtitle{
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+/* Main Section Heading */
+.content h2{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+
+/* Scrollable Container for tiels */
+.scrollable-row{
+    display: flex;
+    overflow-x:auto;
+    padding-bottom: 20px;
+}
+
+.scrollable-row ::-webkit-scrollbar{
+    height: 8px;
+}
+
+.scrollable-row::-webkit-scrollbar-thumb{
+    background-color: #b3b3b3;
+    border-radius: 10px;
+}
+
+/* PLayer Bar Styles */
+.player{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #b3b3b3;
+}
+.player.song-info{
+    display: flex;
+    align-items: center;
+}
+ .player img{
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+ }
+
+ .player.player.song-title{
+    font-size: 16px;
+    font-weight: bold;
+ }
+ .player .artist-name{
+    font-size: 14px;
+ }
+ .artist-card{
+    width: 200px;
+    height: 255px;
+    background-color: #181818;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0 5px 20px;
+    display: inline-block;
+ }
+
+ .artist-card img{
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+ }
+ .artist-card.artist-name{
+    font-size: 18px;
+    color: #fff;
+    margin-top: 8px;
+
+ }
+ .artist-card.artist-title{
+    font-size: 13px;
+    color:#b3b3b3;
+ }
